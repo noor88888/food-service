@@ -24,6 +24,7 @@ public class FoodController
     }
 
     @GetMapping("/{restaurantId}")
+	public
     ResponseEntity<FoodRestaurantPage> getFoodByRestaurantId(@PathVariable Integer restaurantId)
     {
         FoodRestaurantPage foodRestaurantPage= foodService.getFoodByRestaurantId(restaurantId);
